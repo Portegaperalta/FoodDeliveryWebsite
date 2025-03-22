@@ -1,5 +1,107 @@
+:root {
+  --clr-white: #FFFFFF;
+  --clr-gray: #a7a5a9;
+  --clr-light-gray: #F3F3F8;
+  --clr-green: #81BC0A;
+  --clr-green-dark: #7CB30A;
+  --clr-black: #231A1A;
+  --clr-orange: #FF8D69;
+  --clr-orange-2: #FFA224;
+  --clr-yellow: #FDBE2A;
+  --clr-blue: #64B6E3;
+
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: "Hind Vadodara", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.log-in {
+  padding-top: 200px;
+  padding-bottom: 600px;
+  background-color: var(--clr-light-gray);
+}
+
+.log-in-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.log-in-logo {
+  margin-bottom: 20px;
+}
+
+.log-in-logo img {
+  width: 180px;
+}
+
+.log-in-logo h1 {
+  color: var(--clr-black);
+  font-size: 1.10rem;
+  font-weight: 500;
+}
+
+.log-in-logo h1 a {
+  color: var(--clr-green);
+  font-size: 1.10rem;
+  font-weight: 500;
+}
+
+.log-in-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#username {
+  padding: 12px 70px;
+  text-align: center;
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 6px 0px rgba(37, 62, 145, 0.17);
+}
+
+#password {
+  margin-bottom: 50px;
+  text-align: center;
+  border: none;
+  border-radius: 20px;
+  padding: 12px 70px;
+  box-shadow: 1px 1px 6px 0px rgba(37, 62, 145, 0.17);
+}
+
+.forgot-password {
+  margin-bottom: 30px;
+  color: var(--clr-gray);
+  text-decoration: underline;
+}
+
+.forgot-password:hover {
+  color: var(--clr-orange);
+}
+
+.log-in-form button {
+  background-color: var(--clr-green);
+  color: var(--clr-white);
+  padding: 12px 77px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 550;
+}
+
+.log-in-form button:hover {
+  background-color: var(--clr-green-dark);
+  box-shadow: 0px 0px 31px -4px rgba(0, 0, 0, 0.1);
 }
