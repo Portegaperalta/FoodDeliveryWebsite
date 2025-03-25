@@ -23,8 +23,8 @@ a {
 }
 
 .log-in {
-  padding-top: 200px;
-  padding-bottom: 600px;
+  padding-top: 100px;
+  padding-bottom: 300px;
   background-color: var(--clr-light-gray);
 }
 
@@ -34,6 +34,43 @@ a {
   align-items: center;
   justify-content: center;
   text-align: center;
+  position: relative;
+}
+
+.login-img-1 {
+  position: absolute;
+  width: 30vw;
+  left: 35px;
+  top: 100px;
+}
+
+.login-img-1 img {
+  border-radius: 50%;
+  width: 100%;
+}
+
+.login-img-2 {
+  position: absolute;
+  top: 200px;
+  right: 40px;
+  width: 23vw;
+}
+
+.login-img-2 img {
+  border-radius: 50%;
+  width: 100%;
+}
+
+.login-img-3 {
+  position: absolute;
+  right: 50px;
+  bottom: 170px;
+  width: 15vw;
+}
+
+.login-img-3 img {
+  border-radius: 50%;
+  width: 100%;
 }
 
 .log-in-logo {
