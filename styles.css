@@ -227,7 +227,6 @@ a {
   color: var(--clr-dark-gray);
   font-size: 2rem;
   font-weight: 400;
-  max-width: 50%;
 }
 
 .benefits-title h2 span {
@@ -237,7 +236,6 @@ a {
 
 .benefits-title p {
   color: var(--clr-dark-gray);
-  max-width: 50%;
 }
 
 .benefits-content h3 {
@@ -252,6 +250,9 @@ a {
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
+  gap: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .benefit {
@@ -261,6 +262,47 @@ a {
   gap: 20px;
 }
 
+.benefit i {
+  font-size: 1.5rem;
+  box-shadow: 2px 2px 7px 0px rgba(37, 62, 145, 0.17);
+}
+
+.benefit p {
+  color: var(--clr-dark-gray);
+  margin-top: 0;
+}
+
+.benefit .discount {
+  background-color: var(--clr-orange);
+  padding: 12px 13px;
+  border-radius: 25px;
+}
+
+.benefit-discount-text {}
+
+.benefit .multiple {
+  background-color: var(--clr-orange-2);
+  padding: 12px 15px;
+  border-radius: 25px;
+}
+
+.benefit .gestion {
+  background-color: var(--clr-blue);
+  padding: 12px 15px;
+  border-radius: 25px;
+}
+
+.benefit .report {
+  background-color: var(--clr-yellow);
+  padding: 12px 13px;
+  border-radius: 25px;
+}
+
+.benefit .credit {
+  background-color: var(--clr-green);
+  padding: 12px 13px;
+  border-radius: 25px;
+}
 
 
 @media (max-width: 768px) {
