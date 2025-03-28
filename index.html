@@ -127,21 +127,26 @@
                     <h2>Comunicate con nosotros</h2>
                     <p>¿Deseas ser parte de la familia fripick? ¿Tienes alguna duda?.
                         Escribenos y nos estaremos comunicando contigo para responder tus dudas o pautar
-                        una cita. Puedes escribirnos a info@fripick.com llamarnos al 809 947 1500 o llenando el
+                        una cita. Puedes escribirnos a <b>info@fripick.com</b> llamarnos al <b>809 947 1500</b> o
+                        llenando el
                         siguiente formulario:
 
                     </p>
                 </div>
                 <div class="comunicate-form">
                     <form action="">
-                        <input type="text" placeholder="Nombre y apellido" minlength="4" maxlength="24" required>
-                        <input type="email" placeholder="Correo electronico" required>
-                        <input type="tel" placeholder="Telefono" required>
-                        <input type="radio" name="soy" id="proveedor" value="proveedor" required>
-                        <label for="proveedor"><i class="fa-solid fa-shop"></i>Soy un Proveedor</label>
-                        <input type="radio" name="soy" id="empresa" value="empresa" required>
-                        <label for="empresa"><i class="fa-solid fa-building"></i>Soy una Empresa</label>
-                        <input type="text" placeholder="Nombre de tu negocio" minlength="4" required>
+                        <input type="text" id="nombreYapellido" placeholder="Nombre y apellido" minlength="4"
+                            maxlength="24" required>
+                        <input type="email" id="correo" placeholder="Correo electronico" required>
+                        <input type="tel" id="telefono" placeholder="Telefono" required>
+                        <div class="business-type">
+                            <input type="radio" name="soy" id="proveedor" value="proveedor" required>
+                            <label for="proveedor"><i class="fa-solid fa-shop"></i>Soy un Proveedor</label>
+                            <input type="radio" name="soy" id="empresa" value="empresa" required>
+                            <label for="empresa"><i class="fa-solid fa-building"></i>Soy una Empresa</label>
+                        </div>
+                        <input type="text" id="nombreDeNegocio" placeholder="Nombre de tu negocio" minlength="4"
+                            required>
                         <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje"
                             required></textarea>
                         <button type="submit">Enviar</button>
