@@ -1,6 +1,7 @@
 :root {
   --clr-white: #FFFFFF;
   --clr-gray: #a7a5a9;
+  --clr-dark-gray: #666666;
   --clr-light-gray: #F3F3F8;
   --clr-green: #81BC0A;
   --clr-green-dark: #7CB30A;
@@ -23,7 +24,7 @@ a {
 }
 
 .log-in {
-  padding-top: 100px;
+  padding-top: 200px;
   padding-bottom: 300px;
   background-color: var(--clr-light-gray);
 }
@@ -41,7 +42,7 @@ a {
   position: absolute;
   width: 30vw;
   left: 35px;
-  top: 100px;
+  top: 180px;
 }
 
 .login-img-1 img {
@@ -51,9 +52,9 @@ a {
 
 .login-img-2 {
   position: absolute;
-  top: 200px;
+  top: 230px;
   right: 40px;
-  width: 23vw;
+  width: 25vw;
 }
 
 .login-img-2 img {
@@ -63,9 +64,9 @@ a {
 
 .login-img-3 {
   position: absolute;
-  right: 50px;
-  bottom: 170px;
-  width: 15vw;
+  right: 370px;
+  bottom: 280px;
+  width: 20vw;
 }
 
 .login-img-3 img {
@@ -108,6 +109,11 @@ a {
   box-shadow: 1px 1px 6px 0px rgba(37, 62, 145, 0.17);
 }
 
+#username:focus {
+  outline-color: var(--clr-green);
+  box-shadow: 0px 0px 31px -4px rgba(0, 0, 0, 0.1);
+}
+
 #password {
   margin-bottom: 50px;
   text-align: center;
@@ -115,6 +121,11 @@ a {
   border-radius: 20px;
   padding: 12px 70px;
   box-shadow: 1px 1px 6px 0px rgba(37, 62, 145, 0.17);
+}
+
+#password:focus {
+  outline-color: var(--clr-green);
+  box-shadow: 0px 0px 31px -4px rgba(0, 0, 0, 0.1);
 }
 
 .forgot-password {
@@ -141,4 +152,143 @@ a {
 .log-in-form button:hover {
   background-color: var(--clr-green-dark);
   box-shadow: 0px 0px 31px -4px rgba(0, 0, 0, 0.1);
+}
+
+.conectamos {
+  padding-top: 200px;
+  padding-bottom: 150px;
+}
+
+.conectamos-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 100px;
+  justify-content: center;
+}
+
+.contectamos-img img {
+  width: 100%;
+}
+
+.contectamos-text h2 {
+  color: var(--clr-dark-gray);
+  font-size: 2rem;
+  font-weight: 400;
+  width: 100%;
+  max-width: 600px;
+}
+
+.contectamos-text p {
+  color: var(--clr-dark-gray);
+  width: 100%;
+  max-width: 730px;
+  word-spacing: 1px;
+}
+
+.conectamos-stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.stat {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.stat i {
+  font-size: 3rem;
+}
+
+.stat p {
+  color: var(--clr-dark-gray);
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.benefits {
+  background-color: var(--clr-light-gray);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.benefits-content {}
+
+.benefits-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.benefits-title h2 {
+  color: var(--clr-dark-gray);
+  font-size: 2rem;
+  font-weight: 400;
+  max-width: 50%;
+}
+
+.benefits-title h2 span {
+  color: var(--clr-orange);
+  font-weight: 600;
+}
+
+.benefits-title p {
+  color: var(--clr-dark-gray);
+  max-width: 50%;
+}
+
+.benefits-content h3 {
+  text-align: center;
+  color: var(--clr-dark-gray);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.benefits-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.benefit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+
+
+@media (max-width: 768px) {
+  .log-in-img-1 img {
+    display: none;
+  }
+
+  .login-img-1 {
+    display: none;
+  }
+
+  .login-img-2 img {
+    display: none;
+  }
+
+  .login-img-2 {
+    display: none;
+  }
+
+  .login-img-3 img {
+    display: none;
+  }
+
+  .login-img-3 {
+    display: none;
+  }
+
+  .conectamos-title {
+    text-align: center;
+  }
 }
