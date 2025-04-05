@@ -3,6 +3,7 @@
   --clr-gray: #a7a5a9;
   --clr-dark-gray: #666666;
   --clr-light-gray: #F3F3F8;
+  --clr-ligther-gray: #F8F8F8;
   --clr-green: #81BC0A;
   --clr-green-dark: #7CB30A;
   --clr-black: #231A1A;
@@ -250,6 +251,9 @@ a {
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
+  gap: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .benefit {
@@ -259,7 +263,117 @@ a {
   gap: 20px;
 }
 
+.benefit i {
+  font-size: 1.5rem;
+  box-shadow: 2px 2px 7px 0px rgba(37, 62, 145, 0.17);
+}
 
+.benefit p {
+  color: var(--clr-dark-gray);
+  margin-top: 0;
+}
+
+.benefit .discount {
+  background-color: var(--clr-orange);
+  padding: 12px 13px;
+  border-radius: 25px;
+}
+
+.benefit-discount-text {}
+
+.benefit .multiple {
+  background-color: var(--clr-orange-2);
+  padding: 12px 15px;
+  border-radius: 25px;
+}
+
+.benefit .gestion {
+  background-color: var(--clr-blue);
+  padding: 12px 15px;
+  border-radius: 25px;
+}
+
+.benefit .report {
+  background-color: var(--clr-yellow);
+  padding: 12px 13px;
+  border-radius: 25px;
+}
+
+.benefit .credit {
+  background-color: var(--clr-green);
+  padding: 12px 13px;
+  border-radius: 25px;
+}
+
+.comunicate {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.comunicate-text h2 {
+  color: var(--clr-dark-gray);
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.comunicate-text p {
+  color: var(--clr-dark-gray);
+  text-align: center;
+  width: 100%;
+  max-width: 730px;
+  word-spacing: 1px;
+  font-weight: 300;
+}
+
+.comunicate-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.comunicate form input:focus {
+  outline-color: var(--clr-green);
+}
+
+#nombreYapellido {
+  background-color: var(--clr-ligther-gray);
+  color: var(--clr-black);
+  padding: 12px 70px;
+  text-align: center;
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+#correo {
+  background-color: var(--clr-ligther-gray);
+  color: var(--clr-black);
+  padding: 12px 70px;
+  text-align: center;
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+#telefono {
+  background-color: var(--clr-ligther-gray);
+  color: var(--clr-black);
+  padding: 12px 70px;
+  text-align: center;
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.business-type {
+  display: flex;
+  flex-direction: row;
+  justify-content: s;
+}
 
 @media (max-width: 768px) {
   .log-in-img-1 img {

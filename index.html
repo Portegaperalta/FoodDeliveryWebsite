@@ -96,27 +96,26 @@
                         puedes acceder, la empresa donde laboras debe utilizar fripick.
                     </p>
                 </div>
-                <h3>Con fripick obtendras</h3>
                 <div class="benefits-list">
                     <div class="benefit">
-                        <i class="fa-solid fa-tag"></i>
-                        <p>Descuento de nomina automatizado</p>
+                        <i class="fa-solid fa-tag discount" style="color: #fff;"></i>
+                        <p class="benefit-discount-text">Descuento de nomina automatizado</p>
                     </div>
                     <div class="benefit">
-                        <i class="fa-solid fa-gift"></i>
+                        <i class="fa-solid fa-gift multiple" style="color: #fff;"></i>
                         <p>Multiples Beneficios</p>
                     </div>
                     <div class="benefit">
-                        <i class="fa-solid fa-dollar-sign"></i>
+                        <i class="fa-solid fa-dollar-sign gestion" style="color: #fff;"></i>
                         <p>Gestion de Subsidios</p>
                     </div>
                     <div class="benefit">
-                        <i class="fa-solid fa-chart-simple"></i>
+                        <i class="fa-solid fa-chart-simple report" style="color: #fff;"></i>
                         <p>Reportes Dinamicos</p>
                     </div>
                     <div class="benefit">
-                        <i class="fa-solid fa-credit-card"></i>
-                        <p>Limites de Credito segun el salario de los empleados.</p>
+                        <i class="fa-solid fa-credit-card credit" style="color: #fff;"></i>
+                        <p class="benefit-credit-text">Limites de Credito segun el salario de los empleados.</p>
                     </div>
                 </div>
             </div>
@@ -128,21 +127,26 @@
                     <h2>Comunicate con nosotros</h2>
                     <p>¿Deseas ser parte de la familia fripick? ¿Tienes alguna duda?.
                         Escribenos y nos estaremos comunicando contigo para responder tus dudas o pautar
-                        una cita. Puedes escribirnos a info@fripick.com llamarnos al 809 947 1500 o llenando el
+                        una cita. Puedes escribirnos a <b>info@fripick.com</b> llamarnos al <b>809 947 1500</b> o
+                        llenando el
                         siguiente formulario:
 
                     </p>
                 </div>
                 <div class="comunicate-form">
                     <form action="">
-                        <input type="text" placeholder="Nombre y apellido" minlength="4" maxlength="24" required>
-                        <input type="email" placeholder="Correo electronico" required>
-                        <input type="tel" placeholder="Telefono" required>
-                        <input type="radio" name="soy" id="proveedor" value="proveedor" required>
-                        <label for="proveedor"><i class="fa-solid fa-shop"></i>Soy un Proveedor</label>
-                        <input type="radio" name="soy" id="empresa" value="empresa" required>
-                        <label for="empresa"><i class="fa-solid fa-building"></i>Soy una Empresa</label>
-                        <input type="text" placeholder="Nombre de tu negocio" minlength="4" required>
+                        <input type="text" id="nombreYapellido" placeholder="Nombre y apellido" minlength="4"
+                            maxlength="24" required>
+                        <input type="email" id="correo" placeholder="Correo electronico" required>
+                        <input type="tel" id="telefono" placeholder="Telefono" required>
+                        <div class="business-type">
+                            <input type="radio" name="soy" id="proveedor" value="proveedor" required>
+                            <label for="proveedor"><i class="fa-solid fa-shop"></i>Soy un Proveedor</label>
+                            <input type="radio" name="soy" id="empresa" value="empresa" required>
+                            <label for="empresa"><i class="fa-solid fa-building"></i>Soy una Empresa</label>
+                        </div>
+                        <input type="text" id="nombreDeNegocio" placeholder="Nombre de tu negocio" minlength="4"
+                            required>
                         <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje"
                             required></textarea>
                         <button type="submit">Enviar</button>
