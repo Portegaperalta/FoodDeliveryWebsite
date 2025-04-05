@@ -227,7 +227,6 @@ a {
   color: var(--clr-dark-gray);
   font-size: 2rem;
   font-weight: 400;
-  max-width: 50%;
 }
 
 .benefits-title h2 span {
@@ -237,7 +236,6 @@ a {
 
 .benefits-title p {
   color: var(--clr-dark-gray);
-  max-width: 50%;
 }
 
 .benefits-content h3 {
