@@ -219,6 +219,39 @@ a {
 
 .benefits-content {}
 
+.beneftis-type {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 0px solid var(--clr-gray);
+  border-radius: 30px;
+  background-color: var(--clr-white);
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  padding: 0px 50px;
+}
+
+.beneftis-type div:hover {
+  cursor: pointer;
+}
+
+.beneftis-type p {
+  color: var(--clr-dark-gray);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.type-empresa {
+  margin-right: 90px;
+}
+
+.type-proveedor {
+  margin-right: 90px;
+}
+
 .benefits-title {
   text-align: center;
   margin-bottom: 50px;
@@ -228,6 +261,9 @@ a {
   color: var(--clr-dark-gray);
   font-size: 2rem;
   font-weight: 400;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 800px;
 }
 
 .benefits-title h2 span {
@@ -237,6 +273,9 @@ a {
 
 .benefits-title p {
   color: var(--clr-dark-gray);
+  width: 100%;
+  max-width: 1000px;
+  margin: 10px auto;
 }
 
 .benefits-content h3 {
@@ -249,11 +288,19 @@ a {
 .benefits-list {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 50px;
   margin-top: 50px;
   margin-bottom: 50px;
+}
+
+.benefits-list-title {
+  color: var(--clr-dark-gray);
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 50px;
+  margin-bottom: 0px;
 }
 
 .benefit {
@@ -272,6 +319,7 @@ a {
   color: var(--clr-dark-gray);
   margin-top: 0;
 }
+
 
 .benefit .discount {
   background-color: var(--clr-orange);
@@ -331,6 +379,8 @@ a {
   color: var(--clr-dark-gray);
   word-spacing: 1px;
   font-weight: 300;
+  margin-bottom: 0px;
+  margin-top: 5px;
 }
 
 .comunicate-form form {
@@ -493,6 +543,10 @@ a {
   }
 
   .conectamos-title {
+    text-align: center;
+  }
+
+  .contectamos-text {
     text-align: center;
   }
 }
