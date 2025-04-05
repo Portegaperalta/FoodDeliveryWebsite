@@ -308,20 +308,27 @@ a {
 .comunicate {
   padding-top: 100px;
   padding-bottom: 100px;
+  background-image: url(/imgs/footer-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: calc(30% - 50px) calc(120% - 50px);
+}
+
+.comunicate-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .comunicate-text h2 {
   color: var(--clr-dark-gray);
   font-size: 2rem;
   font-weight: 400;
-  text-align: center;
 }
 
 .comunicate-text p {
   color: var(--clr-dark-gray);
-  text-align: center;
-  width: 100%;
-  max-width: 730px;
   word-spacing: 1px;
   font-weight: 300;
 }
@@ -373,6 +380,91 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: s;
+}
+
+.business-type label:hover {
+  cursor: pointer;
+}
+
+.business-type i {
+  margin-right: 5px;
+}
+
+.proveedor-label {
+  color: var(--clr-green);
+  margin-left: 5px;
+}
+
+.empresa-label {
+  color: var(--clr-orange);
+  margin-left: 5px;
+}
+
+#empresa {
+  margin-left: 15px;
+}
+
+#nombreDeNegocio {
+  background-color: var(--clr-ligther-gray);
+  color: var(--clr-black);
+  padding: 12px 70px;
+  text-align: center;
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+#mensaje {
+  background-color: var(--clr-ligther-gray);
+  color: var(--clr-black);
+  padding: 5px 70px;
+  text-align: center;
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  font-family: "Hind Vadodara", sans-serif;
+}
+
+#mensaje:focus {
+  outline-color: var(--clr-green);
+}
+
+.comunicate-form-btn {
+  background-color: var(--clr-green);
+  color: var(--clr-white);
+  padding: 12px 77px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.comunicate-form-btn:hover {
+  background-color: var(--clr-green-dark);
+  box-shadow: 0px 0px 31px -4px rgba(0, 0, 0, 0.1);
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.footer-social a {
+  text-decoration: none;
+  color: var(--clr-gray);
+  padding: 3px 5px;
+}
+
+.footer-company-info p {
+  color: var(--clr-gray);
+  font-size: 0.8rem;
+  font-weight: 300;
+  margin-bottom: 5px;
 }
 
 @media (max-width: 768px) {
